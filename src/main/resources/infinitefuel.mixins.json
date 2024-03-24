@@ -1,10 +1,14 @@
 {
-	"required": true,
-	"package": "com.kevinthegreat.mixin",
-	"compatibilityLevel": "JAVA_17",
-	"mixins": [
-	],
-	"injectors": {
-		"defaultRequire": 1
-	}
+  "required": true,
+  "package": "com.kevinthegreat.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "AbstractFurnaceBlockEntityMixin",
+    "AbstractFurnaceScreenHandlerMixin",
+    "FurnaceFuelSlotMixin",
+    "NetherStarItemMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
 }

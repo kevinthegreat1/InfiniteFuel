@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "tag": "c:glass_blocks"
+  },
+  "base": {
+    "fabric:type": "fabric:nbt",
+    "base": {
+      "item": "minecraft:nether_star"
+    },
+    "nbt": "{depleted:1b}"
+  },
+  "result": {
+    "item": "minecraft:nether_star"
+  },
+  "template": []
+}

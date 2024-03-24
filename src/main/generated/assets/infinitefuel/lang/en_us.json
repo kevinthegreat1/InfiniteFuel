@@ -1,3 +1,4 @@
 {
-  "item.infinitefuel.nether_star.depleted": "Depleted"
+  "item.infinitefuel.nether_star.depleted": "Depleted",
+  "item.infinitefuel.nether_star.depleted.tooltip": "Repair with any glass block in a Smithing Table to reactivate"
 }

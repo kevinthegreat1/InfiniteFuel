@@ -6,7 +6,8 @@
     "AbstractFurnaceBlockEntityMixin",
     "AbstractFurnaceScreenHandlerMixin",
     "FurnaceFuelSlotMixin",
-    "NetherStarItemMixin"
+    "NetherStarItemMixin",
+    "SmithingTransformRecipeMixin"
   ],
   "injectors": {
     "defaultRequire": 1

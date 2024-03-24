@@ -26,6 +26,7 @@ public abstract class NetherStarItemMixin extends Item {
         super.appendTooltip(stack, world, tooltip, context);
         if (stack.getNbt() != null && stack.getNbt().getBoolean("depleted")) {
             tooltip.add(Text.translatable("item.infinitefuel.nether_star.depleted").formatted(Formatting.GRAY, Formatting.ITALIC));
+            tooltip.add(Text.translatable("item.infinitefuel.nether_star.depleted.tooltip").formatted(Formatting.GRAY));
         }
     }
 

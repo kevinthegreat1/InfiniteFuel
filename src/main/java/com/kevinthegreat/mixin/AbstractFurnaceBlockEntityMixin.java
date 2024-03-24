@@ -63,7 +63,7 @@ public abstract class AbstractFurnaceBlockEntityMixin {
 
     @ModifyReturnValue(method = "canExtract", at = @At(value = "RETURN", ordinal = 0))
     private boolean infinitefuel$modifyNetherStarCanExtract(boolean canExtract, @Local(argsOnly = true) ItemStack stack) {
-        return canExtract || (stack.isOf(Items.NETHER_STAR) && stack.getNbt() != null && stack.getNbt().getBoolean("depleted"));
+        return canExtract || stack.isOf(Items.NETHER_STAR) && stack.getNbt() != null && stack.getNbt().getBoolean("depleted");
     }
 
     /**

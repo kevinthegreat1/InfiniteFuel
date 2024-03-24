@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "infinitefuel",
+	"version": "${version}",
+	"name": "Infinite Fuel",
+	"description": "Makes the Nether Star a reusable fuel source",
+	"authors": [
+		"Kevinthegreat"
+	],
+	"contact": {
+		"homepage": "https://github.com/kevinthegreat1/InfiniteFuel",
+		"sources": "https://github.com/kevinthegreat1/InfiniteFuel",
+		"issues": "https://github.com/kevinthegreat1/InfiniteFuel/issues"
+	},
+	"license": "GPL-3.0-or-later",
+	"icon": "assets/infinitefuel/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.kevinthegreat.InfiniteFuel"
+		],
+		"client": [
+			"com.kevinthegreat.InfiniteFuelClient"
+		],
+		"fabric-datagen": [
+			"com.kevinthegreat.InfiniteFuelDataGenerator"
+		]
+	},
+	"mixins": [
+		"infinitefuel.mixins.json",
+		{
+			"config": "infinitefuel.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
